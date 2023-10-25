@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.1rem;
+}
+
+p{
+    font-family: 'roboto', sans-serif;
+    font-size: 2rem;
+    color: var(--secondary-text-color);
+    line-height: 2.7rem;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'roboto', sans-serif;
+}
+
+.container{
+    max-width: 1900px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.small-bold-text{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.upper_nav{
+    justify-content: end;
+    align-items: center;
+    padding: 20px 270px 5px 0px;
+}
+
+.upper_nav_links{
+    list-style: none;
+    gap: 20px;
+}
+
+#language{
+    color: grey;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'roboto', sans-serif;
+}
+
+#language_change{
+    border-radius: 10px;
+    color: grey;
+    font-weight: 300;
+    font-size: 1.4rem;
+    font-family: 'roboto', sans-serif;
+}
+
+.nav-bar{
+    justify-content: space-between;
+    padding-block: 10px;
+}
+
+.company-logo img{
+    width: 500px;
+    height: 100px;
+}
+
+.hover-links{
+    flex-basis: 830px;
+}
+
+.hover-links ul{
+    justify-content: end;
+    display: inline-block;
+    list-style:none;
+    display: flex;
+    gap: 30px;
+}
+
+.primary-button{
+    padding: 15px 20px;
+    border: .2px solid var(--secondary-text-color);
+    border-radius: 8px;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    transition: .5s ease-out;
+}
+.primary-button:hover{
+    color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    padding: 15px 20px;
+    border: .2px solid black;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    background-color:var(--accent-color) ;
+    transition: .5s ease-out;
+}
+.secondary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.search_bar{
+    justify-content: center;
+    padding-block: 5px;
+}
+
+#searchbar{
+    width: 700px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.header-container{
+    padding-block: 20px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-content{
+    width: 40vw;
+    flex-direction: column;
+    align-items: start;
+}
+
+.header-content h1{
+    padding-block: 10px;
+}
+
+.header-content p{
+    padding-block: var(--padding-inline-section) ;
+}
+
+.header-button{
+    margin-block: 30px;
+    color: white;
+}
+
+.header-img img{
+    width: 100%;
+}
+
+.icons_container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons_container .icon{
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.icons_container .icon i{
+    font-size: 4.5rem;
+    color: rgb(88, 205, 160);
+    padding-bottom: 2rem;
+}
+
+.icons_container .icon h2{
+    font-size: 2.5rem;
+    padding-block: 2rem;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+}
+
+.icons_container .icon p{
+    font-size: 2.0rem;
+    padding-bottom: .5rem 0;
+    box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+}
+
+footer{
+    background-color: #88f4e0;
+    padding-block: 150px;
+}
+
+.footer-container{
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-company-logo img{
+    max-width: 300px;
+}
+
+.footer-link-container{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-links{
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.sub-footer-container{
+    background-color: #40e3e9; 
+
+}
+
+.sub-footer-1 , .sub-footer-2{
+    margin-block: 20px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
